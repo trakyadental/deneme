@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0D62551F-4E17-412C-B9A7-F48C4BDDCEB7}</ProjectGuid>
+    <ProjectGuid>{111AF0BF-85AE-47B2-AACE-F978CB857946}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>TrakyaDental</RootNamespace>
     <AssemblyName>TrakyaDental</AssemblyName>
@@ -46,6 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Deneme.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Deneme.Designer.cs">
+      <DependentUpon>Deneme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaIslemler\HastaEkle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HastaIslemler\HastaEkle.Designer.cs">
+      <DependentUpon>HastaEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaIslemler\HastaGoruntuleEkle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HastaIslemler\HastaGoruntuleEkle.Designer.cs">
+      <DependentUpon>HastaGoruntuleEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StokIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StokIslemleri.Designer.cs">
+      <DependentUpon>StokIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaIslemler\HastaIslemEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HastaIslemler\HastaIslemEkran.Designer.cs">
+      <DependentUpon>HastaIslemEkran.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +84,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Deneme.resx">
+      <DependentUpon>Deneme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaIslemler\HastaEkle.resx">
+      <DependentUpon>HastaEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaIslemler\HastaGoruntuleEkle.resx">
+      <DependentUpon>HastaGoruntuleEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StokIslemleri.resx">
+      <DependentUpon>StokIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HastaIslemler\HastaIslemEkran.resx">
+      <DependentUpon>HastaIslemEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
